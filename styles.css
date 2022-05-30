@@ -1,0 +1,284 @@
+:root {
+    --ctext:  rgba(0,0,0,0.8);
+    --ctextlow:  rgba(0,0,0,0.6);
+    --cbuttonblue:  rgba(24,90,225,0.9);
+    --googleblue: rgba(0, 0, 0, 0.06);
+
+}
+body {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+    margin-top: 2px;
+    margin-right: 10px ;
+}
+
+nav div {
+    align-self: flex-start;
+    flex-grow: 1; 
+}
+
+#small_logo {
+    width: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    justify-content: flex-start;
+    opacity: 1;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--ctext);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav img {
+    width: 34px;
+    padding: 5px;
+    margin: auto 7px;
+    opacity: 0.6;
+}
+
+
+nav img:hover {
+    opacity: 0.8;
+}
+
+button, #btn-AdvS{
+    border: 1px ;
+    border-radius: 4.2px;
+    font-size: 15px;
+    background: var(--cbuttonblue);
+    color: white;
+    padding: 10px 28px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+
+h3 {
+    font-weight: normal;
+    color: rgba(205,26,29, 0.9);
+    margin-left: 30px ;
+}
+hr {
+    margin: 5px; 
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+}
+
+
+
+.btn-AdvS {
+    float: right;
+    margin-right: 100px;
+}
+
+
+table {
+    width: 95%;
+    max-width: 1200px;
+    margin-left: 30px;
+    font-size: 13px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--ctextlow);
+    height: 50px;
+    
+}
+.short {width:160px;}
+.long {width: 50%;}
+.weird {width: 30%;}
+
+table .row-2 {height: 50px;}
+table .row-3 {
+    font-size: 12px;
+    color: var(--ctextlow);
+}
+th.row-3 {
+    font-weight: bold;
+}
+
+table input {
+    width: 95%;
+    height: 60%;
+    border:  1px inset rgba(0, 0, 0, 0.25);
+    font-size: 13px;
+    padding-left: 10px;
+
+}
+
+#btn-AdvS {
+    width: 160px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 3%;
+    float: right
+
+}
+
+table input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 2px var(--googleblue);
+}
+
+@media only screen and (max-width: 1080px) {
+    .row-3, .theader-3{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+.vertical{
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+
+    flex-shrink: 1;
+    align-items: center;
+    height: 100%;
+}
+
+.submit-container {
+    width: 520px;
+    text-align: center;
+}
+
+.submit-container .query {
+    background: url("searchicon.png") no-repeat; 
+    background-size: 25px ;
+    background-position: 7px 7px;
+
+    border: 1px solid #ddd;
+    color: var(--ctext);
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 45px;
+    border-radius: 25px;
+    margin-top: 20px;
+    width: 100%;
+    transition: box-shadow 100ms ease-out;
+    outline: none;
+}
+.submit-container .query:hover, .submit-container .query:focus {
+    box-shadow: 0 10px 10px rgba(52, 108, 167, 0.5);
+}
+
+.sc-btn {
+
+    background: var(--googleblue);
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 28px;
+    padding: 10px 15px;
+    border-color: rgba(0, 0, 0, 0.0);
+    border-radius: 4px;   
+    cursor: pointer;
+    transition: border-color 100ms;
+}
+.button:hover {
+    box-shadow: 0 0px 2px rgba(0,0,0,0.5);
+}
+
+.localisation, .localisation * {
+    text-align: center;
+    margin: 25px;
+    font-size: 13px;
+    opacity: 80%;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background: rgba(238, 238, 238,0.8);
+    width: 100%;
+}
+
+.slocation {
+    margin: 15px;
+    padding-left: 20px ;
+    font-size: 16px;
+    color: var(--ctextlow);
+    font-weight: normal;
+}
+
+
+footer a {
+    z-index: 10px;
+    color: var(--ctextlow);
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 14px;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.flinks {
+    display: flex;
+    flex-wrap: wrap;
+}
+.llinks {
+    flex-grow: 2;
+    padding-left: 80px;
+    padding-bottom: 10px;
+}
+.rlinks {
+    flex-wrap: wrap;
+    padding-left: 180px;
+    padding-right: 80px;
+}
+
+
+
+
+
+
+
